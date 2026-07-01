@@ -175,7 +175,7 @@ section {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('assets/images/hero-bg.jpg');
+  background-image: url('images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   z-index: -2;
