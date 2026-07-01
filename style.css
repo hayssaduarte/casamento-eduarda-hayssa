@@ -358,10 +358,59 @@ section {
 }
 
 .historia-img {
-  aspect-ratio: 4/5;
+  position: relative;
+  aspect-ratio: 3/4;
   border-radius: 4px;
   overflow: hidden;
-  background: transparent;
+}
+
+.carrossel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carrossel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.carrossel-slide.ativo {
+  opacity: 1;
+}
+
+.carrossel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carrossel-botoes {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carrossel-ponto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(241, 238, 230, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s;
+}
+
+.carrossel-ponto.ativo {
+  background: var(--off-white);
 }
 
 .historia-img img {
@@ -566,11 +615,12 @@ section {
 }
 
 .rsvp-prazo-data {
-  font-family: var(--fonte-titulo);
-  font-size: 22px !important;
+  font-family: var(--fonte-corpo);
+  font-size: 16px !important;
+  font-weight: 600 !important;
   letter-spacing: 1px;
   color: var(--bordo) !important;
-  margin: 4px 0 !important;
+  margin: 6px 0 !important;
 }
 
 .rsvp-form {

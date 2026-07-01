@@ -161,4 +161,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /* ---------- CARROSSEL DA HISTORIA ---------- */
+  const carrossel = document.getElementById('carrossel-historia');
+  const pontosContainer = document.getElementById('carrossel-pontos');
+
+  if (carrossel) {
+    const slides = carrossel.querySelectorAll('.carrossel-slide');
+    let slideAtual = 0;
+
+    // Criar pontos
+    slides.forEach(function(_, i) {
+      const ponto = document.createElement('button');
+      ponto.classList.add('carrossel-ponto');
+      if (i === 0) ponto.classList.add('ativo');
+      ponto.setAttribute('aria-label', 'Foto ' + (i + 1));
+      ponto.addEventListener('click', function() {
+        irParaSlide(i);
+      });
+      pontosContainer.appendChild(ponto);
+    });
+
+    function irParaSlide(n) {
+      slides[slideAtual].classList.remove('ativo');
+      pontosContainer.children[slideAtual].classList.remove('ativo');
+      slideAtual = n;
+      slides[slideAtual].classList.add('ativo');
+      pontosContainer.children[slideAtual].classList.add('ativo');
+    }
+
+    // Avançar automaticamente a cada 4 segundos
+    setInterval(function() {
+      const proximo = (slideAtual + 1) % slides.length;
+      irParaSlide(proximo);
+    }, 4000);
+  }
+
 });
