@@ -168,8 +168,9 @@ document.addEventListener('DOMContentLoaded', function () {
   if (carrossel) {
     const slides = carrossel.querySelectorAll('.carrossel-slide');
     let slideAtual = 0;
+    let autoPlay = setInterval(avancar, 4000);
+    let touchStartX = 0;
 
-    // Criar pontos
     slides.forEach(function(_, i) {
       const ponto = document.createElement('button');
       ponto.classList.add('carrossel-ponto');
@@ -177,6 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ponto.setAttribute('aria-label', 'Foto ' + (i + 1));
       ponto.addEventListener('click', function() {
         irParaSlide(i);
+        resetAutoPlay();
       });
       pontosContainer.appendChild(ponto);
     });
@@ -184,16 +186,39 @@ document.addEventListener('DOMContentLoaded', function () {
     function irParaSlide(n) {
       slides[slideAtual].classList.remove('ativo');
       pontosContainer.children[slideAtual].classList.remove('ativo');
-      slideAtual = n;
+      slideAtual = (n + slides.length) % slides.length;
       slides[slideAtual].classList.add('ativo');
       pontosContainer.children[slideAtual].classList.add('ativo');
     }
 
-    // Avançar automaticamente a cada 4 segundos
-    setInterval(function() {
-      const proximo = (slideAtual + 1) % slides.length;
-      irParaSlide(proximo);
-    }, 4000);
+    function avancar() { irParaSlide(slideAtual + 1); }
+    function voltar() { irParaSlide(slideAtual - 1); }
+
+    function resetAutoPlay() {
+      clearInterval(autoPlay);
+      autoPlay = setInterval(avancar, 4000);
+    }
+
+    const setas = document.querySelectorAll('.carrossel-seta');
+    setas.forEach(function(seta) {
+      seta.addEventListener('click', function() {
+        if (seta.classList.contains('carrossel-seta-prox')) avancar();
+        else voltar();
+        resetAutoPlay();
+      });
+    });
+
+    carrossel.addEventListener('touchstart', function(e) {
+      touchStartX = e.touches[0].clientX;
+    });
+    carrossel.addEventListener('touchend', function(e) {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) avancar();
+        else voltar();
+        resetAutoPlay();
+      }
+    });
   }
 
 });
