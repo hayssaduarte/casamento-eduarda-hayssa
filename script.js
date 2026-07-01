@@ -60,6 +60,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const agora = new Date().getTime();
     const diferenca = dataCasamento - agora;
 
+    const diasRestantes = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+
+    // Mensagem especial baseada nos dias restantes
+    const mensagemEl = document.getElementById('countdown-mensagem');
+    if (mensagemEl) {
+      if (diferenca <= 0) {
+        mensagemEl.textContent = 'Hoje dizemos sim! 🌈';
+        mensagemEl.style.display = 'block';
+      } else if (diasRestantes <= 2) {
+        mensagemEl.textContent = 'Já já nos vemos! 💛';
+        mensagemEl.style.display = 'block';
+      } else if (diasRestantes <= 5) {
+        mensagemEl.textContent = 'A festa está chegando! 🌈';
+        mensagemEl.style.display = 'block';
+      } else {
+        mensagemEl.style.display = 'none';
+      }
+    }
+
     if (diferenca <= 0) {
       elDias.textContent = '0';
       elHoras.textContent = '0';

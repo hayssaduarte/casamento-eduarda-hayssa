@@ -77,6 +77,7 @@
         <span class="countdown-label">Seg</span>
       </div>
     </div>
+    <p id="countdown-mensagem" class="countdown-mensagem" style="display:none;"></p>
 
     <div class="scroll-indicator"></div>
   </header>
@@ -299,10 +300,12 @@
       <h2 class="secao-titulo">Confirme presença</h2>
     </div>
 
-    <p class="rsvp-aviso reveal">
-      ⏰ Confirme sua presença até <strong>20 de julho de 2026</strong> para que
-      possamos organizar tudo com carinho para vocês.
-    </p>
+    <div class="rsvp-prazo reveal">
+      <span class="rsvp-prazo-icone">⏰</span>
+      <p>Confirme sua presença até</p>
+      <p class="rsvp-prazo-data">20 de julho de 2026</p>
+      <p>para que possamos organizar tudo com carinho para vocês.</p>
+    </div>
 
     <form id="rsvp-form" class="rsvp-form reveal reveal-delay-1" action="https://formspree.io/f/mykanjzl" method="POST">
 
@@ -327,7 +330,7 @@
 
       <div class="form-group">
         <label for="acompanhantes">Número de acompanhantes</label>
-        <input type="number" id="acompanhantes" name="acompanhantes" min="0" max="5" value="0" />
+        <input type="number" id="acompanhantes" name="acompanhantes" min="0" value="0" />
       </div>
 
       <div class="form-group">

@@ -290,6 +290,17 @@ section {
   margin-top: 8px;
 }
 
+.countdown-mensagem {
+  font-family: var(--fonte-corpo);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--bordo);
+  letter-spacing: 1px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease 1.2s forwards;
+}
+
 .scroll-indicator {
   position: absolute;
   bottom: 32px;
@@ -531,12 +542,35 @@ section {
 /* ============================================
    RSVP
    ============================================ */
-.rsvp-aviso {
-  font-size: 15px;
-  color: var(--rosa-antigo);
+.rsvp-prazo {
   text-align: center;
   max-width: 480px;
   margin: -24px auto 32px;
+  padding: 20px 28px;
+  border: 1px solid var(--lilas);
+  border-radius: 4px;
+  background: rgba(205, 183, 201, 0.12);
+}
+
+.rsvp-prazo p {
+  font-size: 14px;
+  color: var(--rosa-antigo);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.rsvp-prazo-icone {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.rsvp-prazo-data {
+  font-family: var(--fonte-titulo);
+  font-size: 22px !important;
+  letter-spacing: 1px;
+  color: var(--bordo) !important;
+  margin: 4px 0 !important;
 }
 
 .rsvp-form {
