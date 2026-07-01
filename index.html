@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduarda & Hayssa | 22.08.2026</title>
+  <meta name="description" content="Site do casamento de Eduarda e Hayssa - 22 de agosto de 2026, Coelho Neto, Maranhão" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVEGACAO
+       ============================================ -->
+  <nav class="navbar">
+    <div class="logo-mono">
+      <img src="assets/icons/monograma-bordo.png" alt="Monograma Eduarda e Hayssa" />
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#historia">Nossa história</a></li>
+      <li><a href="#local">Data &amp; local</a></li>
+      <li><a href="#hospedagem">Hospedagem</a></li>
+      <li><a href="#presentes">Presentes</a></li>
+      <li><a href="#rsvp">Confirmar presença</a></li>
+      <li><a href="#informacoes">Informações</a></li>
+    </ul>
+
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ============================================
+       HERO / CAPA
+       ============================================ -->
+  <header class="hero">
+    <!-- PLACEHOLDER: substituir hero-bg.jpg pela foto da fazenda/arvore/arco-iris -->
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-monograma">
+      <img src="assets/icons/monograma-bordo.png" alt="Monograma Eduarda e Hayssa - 2026" />
+    </div>
+
+    <h1>Eduarda <span class="ampersand">&amp;</span> Hayssa</h1>
+
+    <div class="data-local">
+      <p class="data">22 de Agosto de 2026</p>
+      <p class="local">Coelho Neto &mdash; Maranhão</p>
+    </div>
+
+    <!-- Contagem regressiva -->
+    <div class="countdown">
+      <div class="countdown-item">
+        <span class="countdown-number" id="countdown-dias">0</span>
+        <span class="countdown-label">Dias</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="countdown-horas">0</span>
+        <span class="countdown-label">Horas</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="countdown-minutos">0</span>
+        <span class="countdown-label">Min</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="countdown-segundos">0</span>
+        <span class="countdown-label">Seg</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator"></div>
+  </header>
+
+  <!-- ============================================
+       NOSSA HISTORIA
+       ============================================ -->
+  <section id="historia">
+    <div class="secao-header reveal">
+      <span class="secao-eyebrow">Desde o início</span>
+      <h2 class="secao-titulo">Nossa história</h2>
+    </div>
+
+    <div class="historia-conteudo">
+      <div class="historia-img reveal reveal-delay-1">
+        <img src="assets/images/pedido-casamento.jpg" alt="Momento do pedido de casamento de Eduarda e Hayssa" loading="lazy">
+      </div>
+
+      <div class="historia-texto reveal reveal-delay-2">
+        <!-- Icone simples de arco-iris (referencia ao bordado) -->
+        <svg class="icone-arco" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2 22C2 11 12 2 24 2C36 2 46 11 46 22" stroke="#6E2C36" stroke-width="1.5"/>
+          <path d="M8 22C8 13 15 6 24 6C33 6 40 13 40 22" stroke="#93AC9A" stroke-width="1.5"/>
+          <path d="M14 22C14 15 18 10 24 10C30 10 34 15 34 22" stroke="#82A0B3" stroke-width="1.5"/>
+        </svg>
+
+        <p>Algumas histórias começam de forma inesperada. A nossa começou em 2016, quando nossos caminhos se cruzaram pela primeira vez. Naquele momento, não imaginávamos que, alguns anos depois, estaríamos construindo uma vida juntas.</p>
+
+        <p>Em 2019, a amizade deu espaço ao amor e descobrimos, pouco a pouco, que havíamos encontrado uma na outra algo raro: parceria, admiração, acolhimento e a alegria de compartilhar a vida. Mesmo quando a distância fez parte da nossa história, ela nunca foi capaz de diminuir o que sentíamos. Pelo contrário, tornou ainda mais especial cada reencontro e cada plano para o futuro.</p>
+
+        <p>Com o tempo, os sonhos passaram a ser os mesmos, os planos passaram a ser compartilhados e a certeza de que queríamos caminhar lado a lado só cresceu. Entre conquistas, aprendizados e momentos inesquecíveis, construímos uma história que tem como base o amor, o respeito e a felicidade de sermos quem somos quando estamos juntas.</p>
+
+        <p>Vamos celebrar não apenas o início de um novo capítulo, mas tudo o que nos trouxe até aqui. E é com o coração cheio de gratidão e amor que escolhemos dizer "sim" diante das pessoas mais importantes das nossas vidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       DATA & LOCAL
+       ============================================ -->
+  <section id="local">
+    <div class="secao-header reveal">
+      <span class="secao-eyebrow">Guarde a data</span>
+      <h2 class="secao-titulo">Data &amp; local</h2>
+    </div>
+
+    <div class="local-card reveal reveal-delay-1">
+      <p class="data-grande">22 . 08 . 2026</p>
+      <!-- PLACEHOLDER: ajustar horario oficial -->
+      <p class="horario">A partir das 16h30</p>
+
+      <!-- PLACEHOLDER: substituir pelo endereco completo -->
+      <p class="endereco">Rua Duque de Caxias, nº 1001, Bonsucesso, Coelho Neto - MA</p>
+
+      <!-- PLACEHOLDER: substituir href pelo link real do Google Maps -->
+      <a href="https://www.google.com/maps?q=-4.245475,-43.003133" target="_blank" rel="noopener" class="btn">Ver no Google Maps</a>
+
+      <!-- PLACEHOLDER: descomentar e inserir o iframe do Google Maps quando tiver o endereco
+      <div class="mapa-embed">
+        <iframe src="LINK_EMBED_GOOGLE_MAPS_AQUI" allowfullscreen loading="lazy"></iframe>
+      </div>
+      -->
+      <div class="mapa-embed">
+        <iframe
+          src="https://maps.google.com/maps?q=-4.245475,-43.003133&z=15&output=embed"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       HOSPEDAGEM (HOTEIS)
+       ============================================ -->
+  <section id="hospedagem">
+    <div class="secao-header reveal">
+      <span class="secao-eyebrow">Para quem vem de fora</span>
+      <h2 class="secao-titulo">Onde se hospedar</h2>
+    </div>
+
+    <p class="hospedagem-aviso reveal">
+      As noivas preferem que vocês durmam na cidade! 🏨 Como a maioria vem de longe e
+      a festa promete, fique à vontade para curtir sem preocupação com o caminho de volta.
+      Todos os hotéis ficam a menos de 2 km do local do casamento.
+    </p>
+
+    <div class="hoteis-grid">
+
+      <!-- HOTEL 1 - 3 estrelas -->
+      <div class="card-hotel reveal reveal-delay-1">
+        <svg class="icone-hotel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M3 21V8l9-5 9 5v13" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 21v-7h6v7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Hotel Piquinina ⭐⭐⭐</h3>
+        <p>📍 A 1,9 km do local — aprox. 4 min de carro</p>
+        <p>💬 <a href="https://wa.me/5598984036444" target="_blank" rel="noopener" class="contato-link">(98) 98403-6444</a></p>
+        <p><a href="https://www.google.com/maps?q=-4.257665,-43.014538" target="_blank" rel="noopener" class="contato-link">Ver no Google Maps</a></p>
+      </div>
+
+      <!-- HOTEL 2 - 2 estrelas -->
+      <div class="card-hotel reveal reveal-delay-2">
+        <svg class="icone-hotel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M3 21V8l9-5 9 5v13" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 21v-7h6v7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Hotel Ouro Verde ⭐⭐</h3>
+        <p>📍 A 1,6 km do local — aprox. 3 min de carro</p>
+        <p>💬 <a href="https://wa.me/5598981423331" target="_blank" rel="noopener" class="contato-link">(98) 98142-3331</a></p>
+        <p><a href="https://www.google.com/maps?q=-4.258806,-43.008972" target="_blank" rel="noopener" class="contato-link">Ver no Google Maps</a></p>
+      </div>
+
+      <!-- HOTEL 3 - 1 estrela -->
+      <div class="card-hotel reveal reveal-delay-3">
+        <svg class="icone-hotel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M3 21V8l9-5 9 5v13" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 21v-7h6v7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Hotel Tejof ⭐</h3>
+        <p>📍 A 1,7 km do local — aprox. 3 min de carro</p>
+        <p>💬 <a href="https://wa.me/5598985402607" target="_blank" rel="noopener" class="contato-link">(98) 98540-2607</a></p>
+        <p>⚠️ Check-in até 23h. Recepção não é 24h — hóspedes que chegarem antes recebem a chave da entrada.</p>
+        <p><a href="https://www.google.com/maps?q=-4.256404,-43.013889" target="_blank" rel="noopener" class="contato-link">Ver no Google Maps</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       PRESENTES (PIX)
+       ============================================ -->
+  <section id="presentes">
+    <div class="secao-header reveal">
+      <span class="secao-eyebrow">Carinho de quem ama</span>
+      <h2 class="secao-titulo">Lista de presentes</h2>
+    </div>
+
+    <!-- PIX LIVRE EM DESTAQUE -->
+    <div class="pix-destaque reveal">
+      <h3>De coração para coração</h3>
+      <p>
+        Sua presença já é o maior presente, mas se quiser nos ajudar a começar essa
+        nova fase, aqui estão algumas sugestões. Basta copiar a chave Pix e enviar o
+        valor que desejar 💛
+      </p>
+      <!-- PLACEHOLDER: substituir "86988850866" pela chave real -->
+      <button class="btn-copiar btn-copiar-destaque" data-pix="86988850866">Copiar chave Pix</button>
+    </div>
+
+    <!-- SUGESTOES PARA LUA DE MEL -->
+    <p class="presentes-subtitulo reveal">Sugestões para a lua de mel</p>
+
+    <div class="presentes-grid">
+      <!-- PLACEHOLDER: substituir "86988850866" pela chave real em todos os cards abaixo -->
+      <div class="card-presente reveal reveal-delay-1">
+        <svg class="icone-presente" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 3a9 9 0 010 18M3 12h18" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Pôr do sol em Santorini</h3>
+        <p class="valor">R$ 300,00</p>
+        <button class="btn btn-copiar" data-pix="86988850866">Copiar chave Pix</button>
+      </div>
+
+      <div class="card-presente reveal reveal-delay-2">
+        <svg class="icone-presente" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 2C12 2 4 10 4 15a8 8 0 0016 0c0-5-8-13-8-13z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Jantar em Atenas</h3>
+        <p class="valor">R$ 200,00</p>
+        <button class="btn btn-copiar" data-pix="86988850866">Copiar chave Pix</button>
+      </div>
+
+      <div class="card-presente reveal reveal-delay-3">
+        <svg class="icone-presente" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M4 19h16M4 19V9l4-3v13M12 19V6l4-3v16M20 19v-7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Jantar com vista para o Coliseu</h3>
+        <p class="valor">R$ 280,00</p>
+        <button class="btn btn-copiar" data-pix="86988850866">Copiar chave Pix</button>
+      </div>
+
+      <div class="card-presente reveal reveal-delay-1">
+        <svg class="icone-presente" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M8 2v4M16 2v4M5 9h14M5 6h14a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Degustação de vinhos na Toscana</h3>
+        <p class="valor">R$ 350,00</p>
+        <button class="btn btn-copiar" data-pix="86988850866">Copiar chave Pix</button>
+      </div>
+
+      <div class="card-presente reveal reveal-delay-2">
+        <svg class="icone-presente" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M3 21h18M5 21V10l7-7 7 7v11M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Vista de Florença no Piazzale Michelangelo</h3>
+        <p class="valor">R$ 200,00</p>
+        <button class="btn btn-copiar" data-pix="86988850866">Copiar chave Pix</button>
+      </div>
+
+      <div class="card-presente reveal reveal-delay-3">
+        <svg class="icone-presente" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 21s-7-4.5-9-9c-1.5-3.5 1-7 4.5-7C9.5 5 12 8 12 8s2.5-3 4.5-3c3.5 0 6 3.5 4.5 7-2 4.5-9 9-9 9z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Tapas em Madri</h3>
+        <p class="valor">R$ 200,00</p>
+        <button class="btn btn-copiar" data-pix="86988850866">Copiar chave Pix</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       RSVP - CONFIRMACAO DE PRESENCA
+       ============================================ -->
+  <section id="rsvp">
+    <div class="secao-header reveal">
+      <span class="secao-eyebrow">Sua presença é importante</span>
+      <h2 class="secao-titulo">Confirme presença</h2>
+    </div>
+
+    <p class="rsvp-aviso reveal">
+      ⏰ Confirme sua presença até <strong>20 de julho de 2026</strong> para que
+      possamos organizar tudo com carinho para vocês.
+    </p>
+
+    <form id="rsvp-form" class="rsvp-form reveal reveal-delay-1" action="https://formspree.io/f/mykanjzl" method="POST">
+
+      <div class="form-group">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required />
+      </div>
+
+      <div class="form-group">
+        <label>Você vai comparecer?</label>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" id="presenca-sim" name="presenca" value="Sim" checked />
+            <label for="presenca-sim">Sim</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="presenca-nao" name="presenca" value="Não" />
+            <label for="presenca-nao">Não poderei ir</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="acompanhantes">Número de acompanhantes</label>
+        <input type="number" id="acompanhantes" name="acompanhantes" min="0" max="5" value="0" />
+      </div>
+
+      <div class="form-group">
+        <label for="nomes-acompanhantes">Nome dos acompanhantes (se houver)</label>
+        <input type="text" id="nomes-acompanhantes" name="nomes_acompanhantes" placeholder="Ex: João Silva, Maria Souza" />
+      </div>
+
+      <div class="form-group">
+        <label for="observacao">Observações (opcional)</label>
+        <textarea id="observacao" name="observacao" placeholder="Restrição alimentar, alergia, ou qualquer outra informação..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-preenchido">Enviar confirmação</button>
+
+      <div id="form-mensagem" class="form-mensagem"></div>
+    </form>
+  </section>
+
+  <!-- ============================================
+       INFORMACOES PARA CONVIDADOS
+       ============================================ -->
+  <section id="informacoes">
+    <div class="secao-header reveal">
+      <span class="secao-eyebrow">Bom saber</span>
+      <h2 class="secao-titulo">Informações</h2>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card reveal reveal-delay-1">
+        <h3>Dress code</h3>
+        <p>Traje Social Elegante. Celebrando ao pôr do sol em meio à natureza, sugerimos vestidos longos para as mulheres e traje social leve para os homens, dispensando o uso de terno e gravata.</p>
+      </div>
+
+      <div class="info-card reveal reveal-delay-2">
+        <h3>Horário de chegada</h3>
+        <p>Recomendamos que os convidados cheguem a partir das 16h30.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTATO / DUVIDAS
+       ============================================ -->
+  <section id="contato">
+    <div class="secao-header reveal">
+      <span class="secao-eyebrow">Estamos por aqui</span>
+      <h2 class="secao-titulo">Dúvidas?</h2>
+    </div>
+
+    <div class="contato-grid">
+      <!-- PLACEHOLDER: substituir pelos contatos reais -->
+      <div class="contato-card reveal reveal-delay-1">
+        <h3>Noivas</h3>
+        <p>Eduarda &amp; Hayssa</p>
+        <a href="https://wa.me/5586988850866" target="_blank" rel="noopener" class="btn">Falar no WhatsApp</a>
+      </div>
+
+      <div class="contato-card reveal reveal-delay-2">
+        <h3>Cerimonial</h3>
+        <p>Gislane Lima — GL Cerimonial</p>
+        <a href="https://wa.me/5586981870005" target="_blank" rel="noopener" class="btn">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <div class="footer-mono">
+      <img src="assets/icons/monograma-bordo.png" alt="Monograma Eduarda e Hayssa" />
+    </div>
+    <p class="footer-nomes">Eduarda &amp; Hayssa</p>
+    <p class="footer-data">22 . 08 . 2026 &mdash; Coelho Neto, Maranhão</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
